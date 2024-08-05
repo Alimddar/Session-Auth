@@ -1,0 +1,53 @@
+# Ignore database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Ignore environment variable files
+.env
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore compiled files
+*.pyc
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+
+# Ignore IDE/editor specific files
+.prettierrc
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore yarn lock files
+yarn.lock
+
+# Ignore npm debug files
+npm-debug.log*
