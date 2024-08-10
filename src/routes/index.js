@@ -1,13 +1,12 @@
-import express from 'express';
 import authRoutes from './authRoutes.js';
 import userRoutes from './userRoutes.js';
+import adminRoutes from './adminRoutes.js';
+import express from 'express';
 
-const router = express.Router();
+const route = express.Router();
 
-// Use the auth routes
-router.use('/auth', authRoutes);
+route.use('/auth', authRoutes);
+route.use('/user', userRoutes);
+route.use('/admin', adminRoutes);
 
-// Use the user routes
-router.use('/users', userRoutes);
-
-export default router;
+export default route;

@@ -1,10 +1,10 @@
 import expres from 'express';
-import { signup, login } from '../controllers/userController.js';
-import { validateSignup  } from '../validators/userSchema.js';
+import { signup, login, logout } from '../controllers/authControllers.js';
 
 const router = expres.Router();
 
-router.post('/signup', validateSignup, signup);
+router.post('/signup', signup);
 router.post('/login', login);
+router.get('/logout', logout);
 
 export default router;
