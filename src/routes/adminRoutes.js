@@ -17,10 +17,8 @@ import { authenticateToken, isAdmin } from "../middleware/authMiddleware.js";
 
 const route = express.Router();
 
-// Apply authenticateToken middleware to all routes
 route.use(authenticateToken);
 
-// Admin routes
 route.post('/users', isAdmin, createUserValidator, validate, createUser);
 route.get('/users', isAdmin, getUsers);
 route.get('/users/:id', isAdmin, getUserValidator, validate, getUser);
